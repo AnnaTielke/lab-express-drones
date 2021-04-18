@@ -4,7 +4,9 @@
 
   {{#each allDrones}}
     <li class="list-group-item">
-      {{this.name}}, {{this.propellers}}, {{this.speed}}
+       
+       {{this.name}}, {{this.propellers}}, {{this.maxSpeed}}
+       <a href="/drones/{{this.id}}/edit">Edit</a> 
     </li>
   {{/each}}
 
