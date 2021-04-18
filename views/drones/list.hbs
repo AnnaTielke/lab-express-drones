@@ -1,1 +1,11 @@
 <h2>Available drones</h2>
+
+<ul class="list-group">
+
+  {{#each allDrones}}
+    <li class="list-group-item">
+      {{this.name}}, {{this.propellers}}, {{this.speed}}
+    </li>
+  {{/each}}
+
+</ul>
